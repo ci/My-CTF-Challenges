@@ -33,7 +33,7 @@ PostgreSQL, a simple register (non-injectable) that inserts the (ua, email) comb
 
 #### Source
 * [www/](timisoara-ctf-2018-finals/sqlsanitycheck/www/)
-* [solution.php](timisoara-ctf-2018-finals/sqlsanitycheck/www/)
+* [solution.py](timisoara-ctf-2018-finals/sqlsanitycheck/solution.py)
 
 ### PHP-REvival
 
