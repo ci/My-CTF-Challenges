@@ -1,0 +1,64 @@
+function name:  (null)
+compiled vars:  none
+line     #* E I O op                           fetch          ext  return  operands
+-------------------------------------------------------------------------------------
+   3     0  E >   NOP
+  14     1        INIT_FCALL                                               'getflag'
+         2        FETCH_R                      global              $0      '_REQUEST'
+         3        FETCH_DIM_R                                      $1      $0, 'g'
+         4        SEND_VAR                                                 $1
+         5        DO_FCALL                                      0  $2
+         6        ECHO                                                     $2
+  21     7      > RETURN                                                   1
+
+function name:  getFlag
+compiled vars:  !0 = $guess, !1 = $flag
+line     #* E I O op                           fetch          ext  return  operands
+-------------------------------------------------------------------------------------
+   3     0  E >   RECV                                             !0
+   4     1        ASSIGN                                                   !1, '*CENSORED_FLAG*'
+   6     2        STRLEN                                           ~3      !0
+         3        IS_NOT_IDENTICAL                                 ~4      ~3, 8
+         4      > JMPZ                                                     ~4, ->6
+         5    > > RETURN                                                   null
+   7     6    >   FETCH_DIM_R                                      $5      !0, 3
+         7        FETCH_DIM_R                                      $6      !0, 5
+         8        IS_NOT_IDENTICAL                                 ~7      $5, $6
+         9      > JMPZ_EX                                          ~7      ~7, ->14
+        10    >   FETCH_DIM_R                                      $8      !0, 5
+        11        FETCH_DIM_R                                      $9      !0, 7
+        12        IS_NOT_EQUAL                                     ~10     $8, $9
+        13        BOOL                                             ~7      ~10
+        14    > > JMPZ_EX                                          ~7      ~7, ->20
+        15    >   FETCH_DIM_R                                      $11     !0, 0
+        16        FETCH_DIM_R                                      $12     !0, 1
+        17        MUL                                              ~13     $11, $12
+        18        IS_NOT_IDENTICAL                                 ~14     ~13, 30
+        19        BOOL                                             ~7      ~14
+        20    > > JMPZ                                                     ~7, ->22
+        21    > > RETURN                                                   null
+   8    22    >   FETCH_DIM_R                                      $15     !0, 1
+        23        FETCH_DIM_R                                      $16     !0, 2
+        24        FETCH_DIM_R                                      $17     !0, 6
+        25        ADD                                              ~18     $16, $17
+        26        IS_NOT_EQUAL                                     ~19     $15, ~18
+        27      > JMPZ_EX                                          ~19     ~19, ->34
+        28    >   FETCH_DIM_R                                      $20     !0, 3
+        29        FETCH_DIM_R                                      $21     !0, 0
+        30        FETCH_DIM_R                                      $22     !0, 2
+        31        ADD                                              ~23     $21, $22
+        32        IS_NOT_EQUAL                                     ~24     $20, ~23
+        33        BOOL                                             ~19     ~24
+        34    > > JMPZ                                                     ~19, ->36
+        35    > > RETURN                                                   null
+   9    36    >   INIT_FCALL                                               'md5'
+        37        CONCAT                                           ~25     'a', !0
+        38        CONCAT                                           ~26     ~25, 'a'
+        39        SEND_VAL                                                 ~26
+        40        DO_ICALL                                         $27
+        41        IS_NOT_EQUAL                                     ~28     $27, 0
+        42      > JMPZ                                                     ~28, ->44
+        43    > > RETURN                                                   null
+  11    44    > > RETURN                                                   !1
+  12    45*     > RETURN                                                   null
+End of function getflag

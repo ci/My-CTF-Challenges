@@ -48,9 +48,9 @@ A file containing a dump with PHP opcodes was given. The function is simple, che
 My intended solution was to use z3 to generate the ~90 solutions, then check which one is correct.
 
 #### Source
-* [php-rev.txt - the task](timisoara-ctf-2018-finals/phprevival/php-rev.txt)
-* [www/](timisoara-ctf-2018-finals/phprevival/www/)
-* [solution.py](timisoara-ctf-2018-finals/phprevival/solution.py)
+* [php-rev.txt - the task](timisoara-ctf-2018-finals/php-REvival/php-rev.txt)
+* [www/](timisoara-ctf-2018-finals/php-REvival/www/)
+* [solution.py](timisoara-ctf-2018-finals/php-REvival/solution.py)
 
 ### YAPS - Yet Another PHP Sandbox
 

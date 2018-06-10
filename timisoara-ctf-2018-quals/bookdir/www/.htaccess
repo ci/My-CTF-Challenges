@@ -1,0 +1,12 @@
+<Files .htaccess>
+  Order allow,deny
+  Deny from all
+</Files>
+
+<Files w0w_y0u_g0t_m3___.php>
+  Order allow,deny
+  Deny from all
+</Files>
+
+RewriteEngine On
+RewriteRule ^(?:books/list)\b.* /403.php
