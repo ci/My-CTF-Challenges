@@ -63,7 +63,7 @@ My intended solution was to use z3 to generate the ~90 solutions, then check whi
 Two-part sandbox challenge, I'll split the summary here.
 
 #### Part 1
-The description says that the flag is in `flag.php`. The regex disallows using more than 3 alphanumeric (+underscore) characters in a row or any of the following: ' " . [
+The description says that the flag is in `flag.php`. The regex disallows using more than 2 alphanumeric (+underscore) characters in a row or any of the following: ' " . [
 
 There are quite a few possible solutions I believe, all of them should be based on PHP considering strings without quotes as constants, therefore still strings. Two of the solutions can be:
 
